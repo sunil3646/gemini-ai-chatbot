@@ -11,7 +11,8 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 const corsOptions = {
   origin: 'https://gemini-ai-chat-bot.netlify.app'
-}; // Allow requests from your frontend
+};
+app.use(cors(corsOptions));// Allow requests from your frontend
 app.use(express.json()); // Parse JSON bodies
 
 // Securely get your new API key from environment variables
