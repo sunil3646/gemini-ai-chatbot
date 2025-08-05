@@ -1,6 +1,5 @@
 
 
-//URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAPKoO_uftHbgiqe_sk5GTQnYCuaaQczK8"
 
 document.addEventListener("DOMContentLoaded", () => {
   const chatForm = document.getElementById("chatForm");
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //Generate response
   async function generateResponse(prompt) {
     // Call your backend server, not the Gemini API directly
-    const response = await fetch('http://localhost:3000/generate', {
+    const response = await fetch('https://gemini-ai-chatbot-hsoo.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
