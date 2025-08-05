@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //Generate response
   async function generateResponse(prompt) {
     // Call your backend server, not the Gemini API directly
-    const response = await fetch('https://gemini-ai-chatbot-hsoo.onrender.com', {
+    const response = await fetch('https://gemini-ai-chatbot-hsoo.onrender.com/generate', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
